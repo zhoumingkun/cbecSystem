@@ -35,7 +35,7 @@ public class aaa {
     @RequestMapping("/placeOrder")
     public Object placeOrder(String body) {
         // 请求body体（companyId需赋值appid）
-        body = "{\"dContact\":\"王昆\",\"companyId\":\"{201905140011909}\",\"jContact\":\"顺丰\",\"jTel\":\"111\",\"jMobile\":null,\"jAddress\":\"马甸\",\"dTel\":\"064756935\",\"dMobile\":null,\"dAddress\":\"北京市朝阳区花家地金兴路1号院5号楼1单元202\",\"custid\":\"7551234567\",\"payMethod\":\"0\",\"expressType\":\"1\",\"packagesNo\":\"1\",\"depositumInfo\":\"TCL空调\",\"depositumNo\":\"1\",\"remark\":null,\"isCollection\":\"1\",\"collectionMoney\":\"10.00\",\"isReceipt\":\"0\",\"receipt\":null}";
+        body = "{\"dContact\":\"王昆\",\"companyId\":\"201905140011909\",\"jContact\":\"顺丰\",\"jTel\":\"111\",\"jMobile\":null,\"jAddress\":\"马甸\",\"dTel\":\"064756935\",\"dMobile\":null,\"dAddress\":\"北京市朝阳区花家地金兴路1号院5号楼1单元202\",\"custid\":\"7551234567\",\"payMethod\":\"0\",\"expressType\":\"1\",\"packagesNo\":\"1\",\"depositumInfo\":\"TCL空调\",\"depositumNo\":\"1\",\"remark\":null,\"isCollection\":\"1\",\"collectionMoney\":\"10.00\",\"isReceipt\":\"0\",\"receipt\":null}";
         // 时间戳
         Long currentTimeMillis = System.currentTimeMillis();
         // 根据 key({appid}_sfkdgj-public-interface) / sk / 时间戳 / 请求body 生成签名
